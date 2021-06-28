@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../public/img/weathericon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>{{ title }}</title>
+</head>
+<body>
+    {{>header}}
+    <div class="main-content container-fluid">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-sm-5">
+                <form id="info">
+                    <fieldset>
+                        <legend>Busca de usuários</legend>
+                        <div class="form-group">
+                            <label for="your-name">Digite o username:</label>
+                            <input class="form-control" id="username" type="text" placeholder="username" aria-placeholder="your name" value="">
+                        </div>
+                        <button class="btn btn-outline-primary" type="submit">Procurar</button>
+                        <br>
+                        <br>
+                    <legend>Usuário</legend>
+                    <p class="message-1 lead"></p>
+                    
+                    <legend>Detalhe</legend>
+                    <blockquote class="message-2"></blockquote>
+                        <br>
+                        <br>
+                        <br>
+                        <a href="historico">Histórico de Consultas</a>                        
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- js -->
+    <script src="/js/app.js"></script>
+  </body>
+</body>
+</html>
